@@ -35,7 +35,7 @@ public class TesteGameService {
     public void testeGamePC(){
         List<Game> PCGames = ServiceGame.getListByPlatform(gameList, Platform.PC);
 
-        Assert.assertEquals(16,PCGames.size());
+        Assert.assertEquals(1,PCGames.size());
     }
 
     @Test
@@ -49,7 +49,7 @@ public class TesteGameService {
     public void testeGameSony(){
         List<Game> sonyGames = ServiceGame.getByPuBlisher(gameList, Publisher.SonyComputerEntertainment);
 
-        Assert.assertEquals(6,sonyGames.size());
+        Assert.assertEquals(8,sonyGames.size());
     }
 
 }
